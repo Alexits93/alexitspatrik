@@ -1,0 +1,14 @@
+footer {
+  text-align: center;
+  padding: 40px 40px 80px;
+  background-color: $primary;
+  color: white;
+  .logo-text{
+    &:hover{
+      color: white;
+      &:after{
+        background: white;
+      }
+    }
+  }
+}

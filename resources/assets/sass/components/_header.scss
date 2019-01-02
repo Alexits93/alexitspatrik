@@ -1,0 +1,34 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 70px;
+  background: white;
+  box-shadow: 0 0 9.8px 0.2px rgba(0, 0, 0, 0.35);
+  .container{
+    height: 100%;
+    nav{
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+          margin-right: 18px;
+          &:last-of-type{
+            margin-right: 0;
+          }
+          a{
+            display: block;
+            font-size: $f-mini;
+            &:hover{
+              &:after{
+                background: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

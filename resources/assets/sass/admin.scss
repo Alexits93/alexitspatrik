@@ -1,0 +1,10 @@
+@import '_reset';
+@import '_fonts';
+@import '_mixins';
+@import '_bootstrap_config.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/featherlight/release/featherlight.min.css';
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../../../node_modules/pace-js/themes/blue/pace-theme-barber-shop.css';
+@import '_variables';
+@import 'components/admin/index';
