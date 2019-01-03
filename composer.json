@@ -13,7 +13,8 @@
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.6",
-        "spatie/laravel-medialibrary": "^7.3"
+        "spatie/laravel-medialibrary": "^7.3",
+        "watson/active": "^3.0"
     },
     "require-dev": {
         "filp/whoops": "^2.0",

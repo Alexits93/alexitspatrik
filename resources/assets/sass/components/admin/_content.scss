@@ -4,4 +4,52 @@ html, body {
   color: $primary;
   font-size: $f-normal;
   line-height: $lh-normal;
+  font-family: $roboto-condensedbold;
+}
+
+h1{
+  margin-bottom: 40px;
+}
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.form-group{
+  label{
+    display: block;
+  }
+  input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    border-bottom: 1px solid $primary;
+    font-family: $robotoregular;
+    transition: border-bottom-color .3s ease-in-out;
+    &:focus{
+      border-bottom-color: $blue;
+    }
+  }
+  input[type="submit"]{
+    display: inline-block;
+    width: auto;
+    border-bottom: 0;
+  }
+}
+.button{
+  display: inline-block;
+  height: 40px;
+  padding: 0 20px;
+  line-height: 40px;
+  @include border-radius(20px);
+  &:hover{
+    cursor: pointer;
+  }
+  &.button-blue{
+    color: white;
+    background-color: $blue;
+  }
 }

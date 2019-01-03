@@ -5,6 +5,6 @@
             <img src="{{ URL::to('images/logo.png') }}" class="logo mr-2" alt="Alexits Patrik" title="Alexits Patrik" />
             <a href="{{ url()->to('/admin') }}">alexitspatrik</a>
         </div>
-        <div><a href="{{ route('admin-logout') }}"><i class="fas fa-sign-out-alt"></i> Kilépés</a></div>
+        <div><a href="{{ route('admin-logout') }}"><i class="fas fa-sign-out-alt"></i> Sign Out</a></div>
     </div>
 </header>

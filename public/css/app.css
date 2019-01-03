@@ -11585,6 +11585,7 @@ html {
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
   height: 100%;
   color: #2c2c2c;

@@ -3,6 +3,7 @@ html{
   scroll-behavior: smooth;
 }
 body {
+  position: relative;
   overflow-x: hidden;
   height: 100%;
   color: $primary;

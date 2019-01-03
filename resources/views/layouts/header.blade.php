@@ -4,7 +4,7 @@
             <img src="{{ URL::to('images/logo.png') }}" class="logo amimated" alt="Alexits Patrik" title="Alexits Patrik" data-aos="fade-right"/>
             <a href="{{ route('home') }}" class="logo-text custom" data-aos="fade-left">alexitspatrik</a>
         </div>
-        <nav class="d-none d-lg-inline-block" data-aos="fade-in" data-aos-delay="200">
+        <nav class="d-none d-lg-block" data-aos="fade-in" data-aos-delay="200">
             <ul class="mb-0">
                 <li><a href="#about" class="custom">About</a></li>
                 <li><a href="#education" class="custom">Studies</a></li>
