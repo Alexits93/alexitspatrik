@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,400,500,700');
+@page { margin: 0; padding: 0;}
+html, body{
+    margin: 0;
+    padding: 0;
+    background: red;
+    font-size: 0.423333333cm;
+    line-height: 0.687916667cm;
+    font-family: 'Roboto-Regular', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+#cover{
+    position: relative;
+    padding: 165px 20px;
+    background: url("/images/cover_bg.jpg") center center no-repeat;
+    background-size: cover;
+}
+#cover::after{
+    position: absolute;
+    z-index: 100;
+    display: block;
+    content: '';
+    right: -100px;
+    bottom: -250px;
+    width: 650px;
+    height: 650px;
+    background: rgba(255,255,255,.1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+#cover h1, #cover h2{
+    color: white;
+}
+#cover img{
+    position: absolute;
+    z-index: 150;
+    display: block;
+    right: 20px;
+    bottom: -67px;
+    width: 400px;
+}
+
+#about{
+    background: white;
+}
+
+.s-icon{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    text-align: center;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    -moz-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+}

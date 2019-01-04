@@ -26,6 +26,10 @@
                             {{ Form::text('description', $reference->description, ['required']) }}
                         </div>
                         <div class="form-group col-12 col-md-6">
+                            {{ Form::label('target_url', 'Target URL') }}
+                            {{ Form::text('target_url', $reference->target_url, ['required']) }}
+                        </div>
+                        <div class="form-group col-12 col-md-6">
                             {{ Form::label('color_code', 'Color code') }}
                             {{ Form::text('color_code', $reference->color_code, ['class' => 'colorpicker', 'required']) }}
                         </div>

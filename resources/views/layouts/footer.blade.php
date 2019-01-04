@@ -5,8 +5,13 @@
     </div>
     <p class="mb-20" data-aos="fade-right">Copyright &copy; AlexitsPatrik. All right reserved.</p>
     <p class="mb-20" data-aos="fade-left" data-aos-offset="100">Design by Melinda Hujber, site by Alexits Patrik</p>
+    @php
+        $pages = \Illuminate\Support\Facades\Cache::remember('pages',60,function(){
+                return \App\Models\Page::orderBy('sort')->get();
+            });
+    @endphp
     <ul>
-        @foreach(\App\Models\Page::get() as $page)
+        @foreach($pages as $page)
             <li><a href="{{ URL::to($page->slug) }}" class="custom">{{ $page->title }}</a></li>
         @endforeach
     </ul>

@@ -25,6 +25,10 @@
                             {{ Form::text('description', null, ['required']) }}
                         </div>
                         <div class="form-group col-12 col-md-6">
+                            {{ Form::label('target_url', 'Target URL') }}
+                            {{ Form::text('target_url', null, ['required']) }}
+                        </div>
+                        <div class="form-group col-12 col-md-6">
                             {{ Form::label('color_code', 'Color code') }}
                             {{ Form::text('color_code', null, ['class' => 'colorpicker', 'required']) }}
                         </div>

@@ -14,6 +14,6 @@
                 <li><a href="#contact" class="custom">Contact</a></li>
             </ul>
         </nav>
-        <div data-aos="zoom-in"><a href="#" class="button button-blue download">CV download</a></div>
+        <div data-aos="zoom-in"><a href="{{ route('cv_download') }}" class="button button-blue download" target="_blank">CV download</a></div>
     </div>
 </header>

@@ -1,45 +1,40 @@
-@extends('layouts.app')
-
-@section('content')
-    <div class="cover">
-        <div class="container d-md-flex align-items-center">
-            <div>
-                <h1 data-aos="fade-right" data-aos-delay="200"><span>Patrik</span> Alexits</h1>
-                <h2 data-aos="fade-left" data-aos-delay="400">Full-Stack Web Developer</h2>
-            </div>
-            <img src="{{ URL::to("/images/cover_photo.png") }}" class="cover-photo" alt="Alexits Patrik" title="Alexits Patrik" data-aos="fade-left"/>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="{{ URL::to('css/cv.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <div id="cover">
+        <ul>
+            @foreach($social as $s)
+                <li><span class="s-icon"><i class="{{ $s->icon }}"></i></span><span class="social-text"><small>{{ $s->link1 }}/</small>{{ $s->link2 }}</span></li>
+            @endforeach
+        </ul>
+        <h1><span>Patrik</span> Alexits</h1>
+        <h2>Full-Stack Web Developer</h2>
+        <img src="{{ URL::to("/images/cover_photo.png") }}" alt="Alexits Patrik" title="Alexits Patrik" />
     </div>
     <div id="about">
-        <div class="container px-0 py-80">
-            <h2 class="text-center" data-aos="fade-up">About <span class="f-blue bold-text">me</span></h2>
-            <a  href="#about" id="goDown" data-aos="zoom-in" data-aos-delay="6000   "></a>
-            <div class="row w-lg-790 mx-lg-auto">
-                <div class="col-12 col-md-6" data-aos="fade-right">
-                    <div class="data-card">
-                        <div class="top d-flex align-items-center px-20"><h3>Personal data</h3></div>
-                        <div class="card-content py-40 px-20">
-                            <ul>
-                                <li><span>name:</span> {{ $settings->fullname }}</li>
-                                <li><span>date of birth:</span> {{ date('d.m.Y', strtotime($settings->date_of_birth)) }},<br/>{{ $settings->place_of_birth }}</li>
-                                <li><span>phone number:</span> {{ $settings->phone }}</li>
-                                <li><span>email address:</span> {{ $settings->email }}</li>
-                                <li><span>nationality:</span> {{ $settings->nationality }}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="350">
-                    <div class="data-card">
-                        <div class="top d-flex align-items-center px-20"><h3>Language</h3></div>
-                        <div class="card-content py-40 px-20">
-                            <ul>
-                                <li><span>English:</span> Professional working proficiency (with State Accredited Language Examination)</li>
-                                <li><span>German:</span> Limited working proficiency</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="data-card">
+            <div class="top"><h3>Personal data</h3></div>
+            <div class="card-content">
+                <ul>
+                    <li><span>name:</span> {{ $settings->fullname }}</li>
+                    <li><span>date of birth:</span> {{ date('d.m.Y', strtotime($settings->date_of_birth)) }},<br/>{{ $settings->place_of_birth }}</li>
+                    <li><span>phone number:</span> {{ $settings->phone }}</li>
+                    <li><span>email address:</span> {{ $settings->email }}</li>
+                    <li><span>nationality:</span> {{ $settings->nationality }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="data-card">
+            <div class="top"><h3>Language</h3></div>
+            <div class="card-content">
+                <ul>
+                    <li><span>English:</span> Professional working proficiency (with State Accredited Language Examination)</li>
+                    <li><span>German:</span> Limited working proficiency</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -75,7 +70,6 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center" data-aos="fade-up"><a href="#" class="button button-blue">Certificate view</a></div>
         </div>
     </div>
     <div id="experience">
@@ -205,29 +199,6 @@
             </div>
         </div>
     </div>
-    <div id="portfolio">
-        <div class="container px-0 py-80">
-            <h2 class="text-center" data-aos="fade-down">Portfolio, <span class="f-blue bold-text">references</span></h2>
-            <div class="row">
-                @foreach($portfolio as $p)
-                    <div class="col-12 col-md-6 col-lg-4 mb-20 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
-                        <div class="data-card">
-                            <div class="img-holder" style="background-color: {{ $p->color_code }}">
-                                <a href="{{ $p->target_url }}" target="_blank">
-                                    <img src="{{ URL::to($p->pic_path) }}" alt="{{ $p->title }}" title="{{ $p->title }}" width="{{ $p->img_width }}"/>
-                                </a>
-                            </div>
-                            <div class="card-content py-40 px-20 text-center {{ strtolower($p->title) }}">
-                                <h3><a href="{{ $p->target_url }}" class="custom" target="_blank">{{ $p->title }}</a></h3>
-                                <p>{{ $p->subtitle }} @if($p->collaboration)<span class="bold-text">{{ $p->collaboration }}</span>@endif</p>
-                                <span class="italic-text">{{ $p->description }}</span>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
     <div id="activities">
         <div class="container px-0 py-80">
             <h2 class="text-center" data-aos="fade-down">Leisure activities, <span class="f-blue bold-text">hobbies</span></h2>
@@ -269,35 +240,5 @@
             </div>
         </div>
     </div>
-    <div id="contact">
-        <div class="container px-0 py-80">
-            <h2 class="text-center" data-aos="fade-down">Contact, <span class="f-blue bold-text">message me</span></h2>
-            <div class="row" data-aos="fade-up">
-                <div class="col-12">
-                    {{ Form::open() }}
-                    <div class="form-group">
-                        {{ Form::label('name', 'Name') }}
-                        {{ Form::text('name', null) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('email', 'Email') }}
-                        {{ Form::email('email', null) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('subject', 'Subject') }}
-                        {{ Form::text('subject', null) }}
-                    </div>
-                    <div class="form-group mb-40">
-                        {{ Form::label('message', 'Message') }}
-                        {{ Form::textarea('message', null) }}
-                    </div>
-                    <div class="form-group text-center mb-0">
-                        {{ Form::submit('Send message', ['class' => 'button button-blue']) }}
-                    </div>
-                    {{ Form::close() }}
-                </div>
-            </div>
-        </div>
-    </div>
-    @include('children.social', $social)
-@endsection
+</body>
+</html>

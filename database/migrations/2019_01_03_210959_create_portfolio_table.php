@@ -21,6 +21,7 @@ class CreatePortfolioTable extends Migration
             $table->string('subtitle');
             $table->string('collaboration')->nullable();
             $table->string('description');
+            $table->string('target_url');
             $table->string('color_code');
             $table->string('pic_path')->nullable();
             $table->integer('pic_width')->nullable();

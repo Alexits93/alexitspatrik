@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Page;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Validator;
 
 class PagesController extends Controller
@@ -52,6 +53,7 @@ class PagesController extends Controller
             $page->active = $request->get('active')? 1 : 0;
             $page->save();
 
+            Cache::forget('pages');
             return redirect()->back()->with('successful', 'Page has been successfully created.');
         }
     }
@@ -102,6 +104,7 @@ class PagesController extends Controller
             $page->active = $request->get('active')? 1 : 0;
             $page->save();
 
+            Cache::forget('pages');
             return redirect()->back()->with('successful', 'Page has been successfully updated.');
         }
     }
@@ -115,6 +118,8 @@ class PagesController extends Controller
     public function destroy($id)
     {
         Page::findOrfail($id)->delete();
+
+        Cache::forget('pages');
         return response(['status' => 1]);
     }
 
@@ -124,6 +129,7 @@ class PagesController extends Controller
         $page->active = $status;
         $page->save();
 
+        Cache::forget('pages');
         return redirect()->back()->with('successful', 'The status has been changed.');
     }
 }
