@@ -19,11 +19,14 @@ mix.sass('resources/assets/sass/admin.scss', 'public/css');
 mix.scripts([
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    './node_modules/bs4-summernote/dist/summernote-bs4.min.js',
     './node_modules/@fortawesome/fontawesome-free/js/all.min.js',
     './node_modules/masonry-layout/dist/masonry.pkgd.min.js',
     './node_modules/aos/dist/aos.js',
     './node_modules/datepicker-bootstrap/js/core.min.js',
     './node_modules/datepicker-bootstrap/js/datepicker.min.js',
+    './node_modules/datepicker-bootstrap/js/checkbox.min.js',
+    './node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js',
     './node_modules/sweetalert2/dist/sweetalert2.min.js',
     'resources/assets/js/custom.js',
     'resources/assets/js/admin.js'

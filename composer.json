@@ -10,10 +10,10 @@
         "barryvdh/laravel-dompdf": "^0.8.2",
         "barryvdh/laravel-ide-helper": "^2.4",
         "fideloper/proxy": "^4.0",
+        "intervention/image": "^2.4",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.6",
-        "spatie/laravel-medialibrary": "^7.3",
         "watson/active": "^3.0"
     },
     "require-dev": {

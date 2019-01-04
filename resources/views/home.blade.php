@@ -209,36 +209,18 @@
         <div class="container px-0 py-80">
             <h2 class="text-center" data-aos="fade-down">Portfolio, <span class="f-blue bold-text">references</span></h2>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-20 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
-                    <div class="data-card">
-                        <div class="img-holder halzona"><a href="#"><img src="{{ URL::to('/images/halzona.png') }}" alt="Halzona.hu" title="Halzona.hu" /></a></div>
-                        <div class="card-content py-40 px-20 text-center halzona">
-                            <h3><a href="http://www.halzona.hu" class="custom" target="_blank">Halzona</a></h3>
-                            <p>sitebuild, back-end <span class="bold-text">at Voov Kft.</span></p>
-                            <span class="italic-text">Advanced Blog System (Laravel etc.), Custom Front-end (Bootstrap etc.)</span>
+                @foreach($portfolio as $p)
+                    <div class="col-12 col-md-6 col-lg-4 mb-20 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="data-card">
+                            <div class="img-holder" style="background-color: {{ $p->color_code }}"><a href="#"><img src="{{ URL::to($p->pic_path) }}" alt="{{ $p->title }}" title="{{ $p->title }}" width="{{ $p->img_width }}"/></a></div>
+                            <div class="card-content py-40 px-20 text-center {{ strtolower($p->title) }}">
+                                <h3><a href="http://www.halzona.hu" class="custom" target="_blank">{{ $p->title }}</a></h3>
+                                <p>{{ $p->subtitle }} @if($p->collaboration)<span class="bold-text">{{ $p->collaboration }}</span>@endif</p>
+                                <span class="italic-text">{{ $p->description }}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-20 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                    <div class="data-card">
-                        <div class="img-holder loverajto"><a href="http://www.loverajto.hu"><img src="{{ URL::to('/images/loverajto.png') }}" alt="Loverajto.hu" title="Loverajto.hu" /></a></div>
-                        <div class="card-content py-40 px-20 text-center loverajto">
-                            <h3><a href="http://www.loverajto.hu" class="custom" target="_blank">Loverajto</a></h3>
-                            <p>sitebuild <span class="bold-text">with Zach Gergely</span></p>
-                            <span class="italic-text">Custom Front-end (css3 etc.)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-20" data-aos="fade-up">
-                    <div class="data-card">
-                        <div class="img-holder wabi"><a href="http://www.wabi.hu"><img src="{{ URL::to('/images/wabi.png') }}" alt="Wabi.hu" title="Wabi.hu" /></a></div>
-                        <div class="card-content py-40 px-20 text-center wabi">
-                            <h3><a href="http://www.wabi.hu" class="custom" target="_blank">Wabi</a></h3>
-                            <p>back-end <span class="bold-text">at Voov Kft.</span></p>
-                            <span class="italic-text">Advanced Appointment System (Laravel etc.), Customized Bootstrap Admin Template (Bootstrap etc.)</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

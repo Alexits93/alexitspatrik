@@ -3,9 +3,12 @@
 @import '_mixins';
 @import '_bootstrap_config.scss';
 @import '../../../node_modules/bootstrap/scss/bootstrap';
-@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../../../node_modules/bs4-summernote/dist/summernote-bs4.css';
 @import '../../../node_modules/datepicker-bootstrap/css/core.min.css';
 @import '../../../node_modules/datepicker-bootstrap/css/datepicker.min.css';
+@import '../../../node_modules/datepicker-bootstrap/css/checkbox.min.css';
 @import '../../../node_modules/sweetalert2/dist/sweetalert2.min.css';
+@import '../../../node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css';
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import '_variables';
 @import 'components/admin/index';

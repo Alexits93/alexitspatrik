@@ -25,7 +25,7 @@
                             {{ Form::text('link2', null, ['required']) }}
                         </div>
                         <div class="form-group col-12 col-md-6">
-                            {{ Form::label('target_url', 'Traget URL') }}
+                            {{ Form::label('target_url', 'Target URL') }}
                             {{ Form::text('target_url', null, ['required']) }}
                         </div>
                         <div class="form-group col-12 col-md-6">

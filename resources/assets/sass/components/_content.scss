@@ -435,6 +435,9 @@ a{
     }
   }
 }
+#page{
+  padding: 150px 0 80px;
+}
 .form-group{
   margin-bottom: 20px;
   @include media-breakpoint-up(md){
@@ -727,6 +730,9 @@ a{
 }
 .f-blue{
   color: $blue;
+}
+.f-primary{
+  color: $primary;
 }
 .f-normal{
   font-size: $f-normal;

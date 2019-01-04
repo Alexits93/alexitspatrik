@@ -31,7 +31,7 @@
             message += '{{ $error }}\n';
         @endforeach
         swal({
-            title: 'Hiba',
+            title: 'Error',
             text: message,
             type: 'error'
         });
@@ -39,7 +39,7 @@
 
     @if(Session::get('successful'))
         swal({
-            title: 'Státusz',
+            title: 'Status',
             text: '{!! Session::get('successful') !!}',
             type: 'success'
         });
@@ -47,7 +47,7 @@
 
     @if(Session::get('not_successful'))
         swal({
-            title: 'Hiba',
+            title: 'Error',
             text: '{!! Session::get('not_successful') !!}',
             type: 'error'
         });

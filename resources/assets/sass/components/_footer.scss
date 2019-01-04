@@ -3,11 +3,26 @@ footer {
   padding: 40px 40px 80px;
   background-color: $primary;
   color: white;
-  .logo-text{
+  a{
     &:hover{
       color: white;
       &:after{
         background: white;
+      }
+    }
+  }
+  ul{
+    list-style: none;
+    li{
+      display: inline-block;
+      margin-right: 10px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+      a{
+        display: block;
+        color: $grey;
+        font-size: $f-mini
       }
     }
   }

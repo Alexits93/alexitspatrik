@@ -16,6 +16,7 @@ a{
   }
 }
 
+
 .form-group{
   label{
     display: block;
@@ -29,15 +30,58 @@ a{
     border-bottom: 1px solid $primary;
     font-family: $robotoregular;
     transition: border-bottom-color .3s ease-in-out;
+    @include border-radius(0);
     &:focus{
       border-bottom-color: $blue;
     }
   }
+  input[type="file"]{
+    position: relative;
+    text-align: left;
+    text-indent: -9999px;
+    width: auto;
+    &:hover{
+      &:before{
+        cursor: pointer;
+        background: $primary;
+        color: white;
+      }
+    }
+    &:before {
+      position: absolute;
+      text-indent: 0;
+      display: block;
+      top: 0;
+      left: 0;
+      font-family: $roboto-condensedbold;
+      border: 1px solid $primary;
+      border-bottom: 0;
+      height: 30px;
+      width: 40%;
+      line-height: 30px;
+      text-align: center;
+      content: 'Upload';
+      transition: all .3s ease-in-out;
+    }
+  }
   input[type="submit"]{
     display: inline-block;
+    font-family: $roboto-condensedbold;
+    font-size: $f-medium;
     width: auto;
     border-bottom: 0;
+    transition: none;
   }
+  textarea{
+    border: 1px solid $primary;
+    @include border-radius(0);
+    padding: 10px;
+    width: 100%;
+  }
+}
+.colorpicker{
+  padding: 0;
+  box-sizing: border-box;
 }
 .button{
   display: inline-block;
@@ -52,4 +96,24 @@ a{
     color: white;
     background-color: $blue;
   }
+}
+.preview-holder{
+  display: none;
+  &.show{
+    display: block;
+  }
+  .preview{
+    display: flex;
+    height: 200px;
+    max-width: 420px;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include border-radius-top-left(20px);
+    @include border-radius-top-right(20px);
+  }
+}
+.green{
+  color: green;
 }

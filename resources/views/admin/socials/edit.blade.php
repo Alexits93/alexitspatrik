@@ -26,7 +26,7 @@
                             {{ Form::text('link2', $social->link2, ['required']) }}
                         </div>
                         <div class="form-group col-12 col-md-6">
-                            {{ Form::label('target_url', 'Traget URL') }}
+                            {{ Form::label('target_url', 'Target URL') }}
                             {{ Form::text('target_url', $social->target_url, ['required']) }}
                         </div>
                         <div class="form-group col-12 col-md-6">
