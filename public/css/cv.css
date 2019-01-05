@@ -1,25 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,400,500,700');
-@page { margin: 0; padding: 0;}
-html, body{
-    margin: 0;
-    padding: 0;
-    background: red;
-    font-size: 0.423333333cm;
-    line-height: 0.687916667cm;
-    font-family: 'Roboto-Regular', sans-serif;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 2cm;
+    text-align: center;
+    line-height: 1.65cm;
+    color: #2c2c2c;
 }
+
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 34px;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+}
+h1 span{
+    font-family: 'Roboto-Light', sans-serif;
+    font-weight: 300;
+}
+h2{
+    font-size: 28px;
+    font-family: 'Roboto-Light', sans-serif;
+    font-weight: 300;
+}
+h2 span{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+    color: #4a74e4;
 }
 #cover{
     position: relative;
-    padding: 165px 20px;
+    padding: 70px 20px 100px;
     background: url("/images/cover_bg.jpg") center center no-repeat;
-    background-size: cover;
 }
 #cover::after{
     position: absolute;
@@ -35,6 +52,31 @@ ul{
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
+#cover ul{
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+#cover ul li{
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    padding: 0;
+    margin-right: 15px;
+}
+#cover ul li:last-of-type{
+    margin-right: 0;
+}
+#cover ul li span{
+    font-size: 13px;
+}
+#cover ul li span.s-icon{
+    display: inline-block;
+    margin: 2px 5px 0 0;
+}
 #cover h1, #cover h2{
     color: white;
 }
@@ -43,21 +85,106 @@ ul{
     z-index: 150;
     display: block;
     right: 20px;
-    bottom: -67px;
-    width: 400px;
+    bottom: -54px;
+    width: 250px;
 }
 
 #about{
+    position: relative;
     background: white;
+    padding: 40px 20px;
+}
+#about .data-card{
+    box-shadow: 0 0 9px 1px rgba(44, 44, 44, 0.35);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 330px;
+}
+#about .data-card .top{
+    border-bottom: 1px solid #d5d5d5;
+}
+#about .data-card .card-content{
+    padding: 20px 0;
+}
+#about .data-card .card-content ul li{
+    padding-left: 20px;
+}
+#about .data-card .card-content ul li img{
+    display: inline-block;
+    width: 11px;
+    margin-right: 5px;
+}
+#about .data-card .card-content ul li span{
+    font-weight: 700;
+}
+#about .data-card:last-of-type{
+    position: absolute;
+    top: 40px;
+    right: 20px;
 }
 
-.s-icon{
-    display: inline;
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    text-align: center;
-    -webkit-border-radius: 50% 50% 50% 50%;
-    -moz-border-radius: 50% 50% 50% 50%;
-    border-radius: 50% 50% 50% 50%;
+#education{
+    position: relative;
+    padding: 40px 20px;
+    background: #dbe3fa;
+    height: 320px;
 }
+#education h2{
+    margin-bottom: 40px;
+}
+#education .data-card{
+    padding: 10px;
+    background: white;
+    width: 216px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+}
+#education .data-card:last-of-type{
+    margin-right: 0;
+}
+#experience{
+    clear: left;
+}
+
+.block{
+    position: relative;
+    background: lime;
+}
+#experience{
+    padding: 40px 20px;
+    position: absolute;
+    background: lightblue;
+    width: 9.75cm;
+    left: 0;
+    top: 0;
+}
+#knowledge{
+    padding: 40px 20px;
+    position: absolute;
+    background: lightgrey;
+    width: 9.75cm;
+    right: 0;
+    top: 0;
+}
+
+.bold-text{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+}
+.italic-text{
+    font-family: 'Roboto-Italic', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.card-date{
+    font-size: 14px;
+    color: #4a74e4;
+}
+.page-break {
+    page-break-after: always;
+}
+

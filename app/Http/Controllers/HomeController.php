@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Portfolio;
 use App\Models\Setting;
 use App\Models\Social;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Barryvdh\DomPDF\Facade as PDF;
 
@@ -28,11 +27,7 @@ class HomeController extends Controller
         return view('home', compact('portfolio', 'social', 'settings'));
     }
 
-    public function cv(Request $request){
-        $portfolio = Cache::remember('portfolio',60,function(){
-            return Portfolio::orderBy('sort')->get();
-        });
-
+    public function cv(){
         $social = Cache::remember('social',60,function(){
             return Social::orderBy('sort')->get();
         });
@@ -42,7 +37,6 @@ class HomeController extends Controller
         });
 
         $data = [
-            'portfolio' => $portfolio,
             'social' => $social,
             'settings' => $settings
         ];
