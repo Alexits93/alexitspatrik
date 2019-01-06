@@ -97,13 +97,12 @@
                 <div class="data-card">
                     <div class="card-content">
                         <span class="card-date">2015.05-2017.01</span>
-                        <p class="bold-text">self employed at IT-Sopron</p>
+                        <p class="bold-text">Self employed at IT-Sopron</p>
                         <ul>
-                            <li>Experience in handling stressful situations</li>
-                            <li>Experience with business management</li>
-                            <li>Experience with Clients</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Experience in handling stressful situations</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Experience with business management</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Experience with Clients</li>
                         </ul>
-                        <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
                     </div>
                 </div>
             </div>
@@ -111,13 +110,12 @@
                 <div class="data-card">
                     <div class="card-content">
                         <span class="card-date">2017.01-2017.04</span>
-                        <p class="bold-text">web developer at Master Partner Kft.</p>
+                        <p class="bold-text">Web developer at Master Partner Kft.</p>
                         <ul>
-                            <li>customizing LG Signage framework</li>
-                            <li>working with custom PHP frameworks, sitebuilding</li>
-                            <li>Project Management with Asana</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />customizing LG Signage framework</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />working with custom PHP frameworks, sitebuilding</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Project Management with Asana</li>
                         </ul>
-                        <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
                     </div>
                 </div>
             </div>
@@ -127,66 +125,52 @@
                         <span class="card-date">2017.06-2018.12</span>
                         <p class="bold-text">Full-Stack Web Developer at Voov Kft.</p>
                         <ul>
-                            <li>maintaining or support the development of web applications/websites.</li>
-                            <li>50+ projects (with management software - Active Collab)</li>
-                            <li>working together with the designer team</li>
-                            <li>front-end, sitebuild (HTML5, CSS3, SCSS, Javascript, JQuery, AJAX, Bootstrap, Photoshop, Zeplin etc.)</li>
-                            <li>back-end (Laravel, PHP, MySQL, Custom PHP frameworks, Core PHP)</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />maintaining or support the development of web applications/websites.</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />50+ projects (with management software - Active Collab)</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />working together with the designer team</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />front-end, sitebuild (HTML5, CSS3, SCSS, Javascript, JQuery, AJAX, Bootstrap, Photoshop, Zeplin etc.)</li>
+                            <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />back-end (Laravel, PHP, MySQL, Custom PHP frameworks, Core PHP)</li>
                         </ul>
-                        <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
                     </div>
                 </div>
             </div>
         </div>
         <div id="knowledge">
-            <div class="container px-0 py-80">
-                <h2 class="text-center" data-aos="fade-down">Known <span class="f-blue bold-text">technologies</span></h2>
-                <div class="row">
-                    <div class="col-12 col-md-4" data-aos="fade-up">
-                        <div class="data-card">
-                            <div class="card-content">
-                                <div class="circle-top worktools"></div>
-                                <h3 class="text-center mb-20">Back-end</h3>
-                                <ul>
-                                    <li>Professional work proficiency with Laravel</li>
-                                    <li>Proficient with MySQL, PHP</li>
-                                    <li>Experience in custom PHP frameworks</li>
-                                    <li>Participated in more than 20 Laravel or custom PHP framework projects</li>
-                                    <li>Capable to implement packages into projects</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="data-card">
-                            <div class="card-content">
-                                <div class="circle-top worktools"></div>
-                                <h3 class="text-center mb-20">Front-end</h3>
-                                <ul>
-                                    <li>Professional work proficiency with Bootstrap, CSS Flexbox</li>
-                                    <li>Proficient with css3, scss, html5, js, jquery, ajax, Blade templating language</li>
-                                    <li>Experience in customizing bootstrap, css templates</li>
-                                    <li>Participated in more than 20 sitebuild projects</li>
-                                    <li>Capable to sitebuild from PSD</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="data-card">
-                            <div class="card-content">
-                                <div class="circle-top worktools"></div>
-                                <h3 class="text-center mb-20">Worktools</h3>
-                                <ul>
-                                    <li>Photoshop, Zeplin (limited work proficiency)</li>
-                                    <li>Git, npm, composer (limited work proficiency with GitHub, Laravel-mix)</li>
-                                    <li>NexusFont, FontSquirrel</li>
-                                    <li>Active Collab (Project management)</li>
-                                    <li>PhpStorm, NetBeans (2+ years experience)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <h2>Known <span class="bold-text">technologies</span></h2>
+            <div class="data-card">
+                <div class="card-content">
+                    <p class="bold-text">Back-end</p>
+                    <ul>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Professional work proficiency with Laravel</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Proficient with MySQL, PHP</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Experience in custom PHP frameworks</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Participated in more than 20 Laravel or custom PHP framework projects</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Capable to implement packages into projects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="data-card">
+                <div class="card-content">
+                    <p class="bold-text">Front-end</p>
+                    <ul>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Professional work proficiency with Bootstrap, CSS Flexbox</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Proficient with css3, scss, html5, js, jquery, ajax, Blade templating language</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Experience in customizing bootstrap, css templates</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Participated in more than 20 sitebuild projects</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Capable to sitebuild from PSD</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="data-card">
+                <div class="card-content">
+                    <p class="bold-text">Worktools</p>
+                    <ul>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Photoshop, Zeplin (limited work proficiency)</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Git, npm, composer (limited work proficiency with GitHub, Laravel-mix)</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />NexusFont, FontSquirrel</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />Active Collab (Project management)</li>
+                        <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" />PhpStorm, NetBeans (2+ years experience)</li>
+                    </ul>
                 </div>
             </div>
         </div>

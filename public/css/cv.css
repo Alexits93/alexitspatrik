@@ -27,6 +27,7 @@ h2{
     font-size: 28px;
     font-family: 'Roboto-Light', sans-serif;
     font-weight: 300;
+    margin-bottom: 40px;
 }
 h2 span{
     font-family: 'Roboto-Bold', sans-serif;
@@ -86,7 +87,7 @@ h2 span{
     display: block;
     right: 20px;
     bottom: -54px;
-    width: 250px;
+    width: 270px;
 }
 
 #about{
@@ -95,10 +96,6 @@ h2 span{
     padding: 40px 20px;
 }
 #about .data-card{
-    box-shadow: 0 0 9px 1px rgba(44, 44, 44, 0.35);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
     width: 330px;
 }
 #about .data-card .top{
@@ -130,24 +127,13 @@ h2 span{
     background: #dbe3fa;
     height: 320px;
 }
-#education h2{
-    margin-bottom: 40px;
-}
 #education .data-card{
-    padding: 10px;
-    background: white;
     width: 216px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
     float: left;
     margin-right: 20px;
 }
 #education .data-card:last-of-type{
     margin-right: 0;
-}
-#experience{
-    clear: left;
 }
 
 .block{
@@ -157,16 +143,21 @@ h2 span{
 #experience{
     padding: 40px 20px;
     position: absolute;
-    background: lightblue;
-    width: 9.75cm;
+    clear: left;
+    width: 9.5cm;
     left: 0;
     top: 0;
+}
+#experience .data-card, #knowledge .data-card{
+    margin-bottom: 20px;
+}
+#experience .card-holder .data-card .card-content p.bold-text, #knowledge .data-card .card-content p.bold-text{
+    margin: 0 0 20px 0;
 }
 #knowledge{
     padding: 40px 20px;
     position: absolute;
-    background: lightgrey;
-    width: 9.75cm;
+    width: 9.5cm;
     right: 0;
     top: 0;
 }
@@ -186,5 +177,27 @@ h2 span{
 }
 .page-break {
     page-break-after: always;
+}
+
+.data-card{
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 9px 1px rgba(44, 44, 44, 0.35);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.data-card .card-content ul li{
+    padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.data-card .card-content ul li img{
+    display: inline-block;
+    width: 11px;
+    margin-right: 5px;
+}
+.data-card .card-content ul li span{
+    font-weight: 700;
 }
 
