@@ -7,7 +7,7 @@ return [
          */
         'defaults'       => [
             'title'        => "Alexits Patrik - Full-Stack Web Developer", // set false to total remove
-            'description'  => "", // set false to total remove
+            'description'  => "I love to learn new technologies, always looking for a challenge.", // set false to total remove
             'separator'    => ' - ',
             'keywords'     => [],
             'canonical'    => false, // Set null for using Url::current(), set false to total remove
@@ -30,11 +30,11 @@ return [
          */
         'defaults' => [
             'title'       => "Alexits Patrik - Full Stack Web Developer", // set false to total remove
-            'description' => "", // set false to total remove
+            'description' => "I love to learn new technologies, always looking for a challenge.", // set false to total remove
             'url'         => false, // Set null for using Url::current(), set false to total remove
             'type'        => false,
             'site_name'   => false,
-            'images'      => [],
+            'images'      => [url()->to('images/og_picture.jpg')],
         ],
     ],
     'twitter' => [
