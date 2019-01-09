@@ -50,9 +50,9 @@
                 <div class="col-12 col-md-4" data-aos="fade-up">
                     <div class="data-card">
                         <div class="card-content">
-                            <span class="card-date">2007-2011</span>
-                            <p class="bold-text">Handler Nándor Secondary School, Sopron, Hungary</p>
-                            <span class="italic-text">Information Technologies</span>
+                            <span class="card-date">2014-2017</span>
+                            <p class="bold-text">University of West Hungary</p>
+                            <span class="italic-text">Approved programme of vocational higher education, Business Information Technologist Assistant</span>
                         </div>
                     </div>
                 </div>
@@ -68,14 +68,13 @@
                 <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="data-card">
                         <div class="card-content">
-                            <span class="card-date">2014-2017</span>
-                            <p class="bold-text">University of West Hungary</p>
-                            <span class="italic-text">Approved programme of vocational higher education, Business Information Technologist Assistant</span>
+                            <span class="card-date">2007-2011</span>
+                            <p class="bold-text">Handler Nándor Secondary School, Sopron, Hungary</p>
+                            <span class="italic-text">Information Technologies</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center" data-aos="fade-up"><a href="#" class="button button-blue">Certificate view</a></div>
         </div>
     </div>
     <div id="experience">
@@ -88,12 +87,14 @@
                         <span class="card-number">1</span>
                         <div class="data-card">
                             <div class="card-content">
-                                <span class="card-date">2015.05-2017.01</span>
-                                <p class="bold-text">self employed at IT-Sopron</p>
+                                <span class="card-date">2017.06-2018.12</span>
+                                <p class="bold-text">Full-Stack Web Developer at Voov Kft.</p>
                                 <ul>
-                                    <li>Experience in handling stressful situations</li>
-                                    <li>Experience with business management</li>
-                                    <li>Experience with Clients</li>
+                                    <li>maintaining or support the development of web applications/websites.</li>
+                                    <li>50+ projects (with management software - Active Collab)</li>
+                                    <li>working together with the designer team</li>
+                                    <li>front-end, sitebuild (HTML5, CSS3, SCSS, Javascript, JQuery, AJAX, Bootstrap, Photoshop, Zeplin etc.)</li>
+                                    <li>back-end (Laravel, PHP, MySQL, Custom PHP frameworks, Core PHP)</li>
                                 </ul>
                                 <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
                             </div>
@@ -101,23 +102,6 @@
                     </div>
                     <div class="card-holder">
                         <span class="card-number">2</span>
-                        <div class="data-card">
-                            <div class="card-content">
-                                <span class="card-date">2016.06-2017.01</span>
-                                <p class="bold-text">trainee at Hungarian Post</p>
-                                <ul>
-                                    <li>trainee at West Hungarian Regional Directorate General</li>
-                                    <li>optimization and analyzation of delivery routes, systems</li>
-                                    <li>creating financial statements with MS Excel</li>
-                                    <li>creating presentations with MS PowerPoint</li>
-                                    <li>analyzing routes with</li>
-                                </ul>
-                                <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-holder">
-                        <span class="card-number">3</span>
                         <div class="data-card">
                             <div class="card-content">
                                 <span class="card-date">2017.01-2017.04</span>
@@ -132,17 +116,31 @@
                         </div>
                     </div>
                     <div class="card-holder">
+                        <span class="card-number">3</span>
+                        <div class="data-card">
+                            <div class="card-content">
+                                <span class="card-date">2016.06-2017.01</span>
+                                <p class="bold-text">trainee at Hungarian Post</p>
+                                <ul>
+                                    <li>trainee at West Hungarian Regional Directorate General</li>
+                                    <li>optimization and analyzation of delivery routes, systems</li>
+                                    <li>creating financial statements with MS Excel</li>
+                                    <li>creating presentations with MS PowerPoint</li>
+                                    <li>analyzing routes with Arc Map</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-holder">
                         <span class="card-number">4</span>
                         <div class="data-card">
                             <div class="card-content">
-                                <span class="card-date">2017.06-2018.12</span>
-                                <p class="bold-text">Full-Stack Web Developer at Voov Kft.</p>
+                                <span class="card-date">2015.05-2017.01</span>
+                                <p class="bold-text">self employed at IT-Sopron</p>
                                 <ul>
-                                    <li>maintaining or support the development of web applications/websites.</li>
-                                    <li>50+ projects (with management software - Active Collab)</li>
-                                    <li>working together with the designer team</li>
-                                    <li>front-end, sitebuild (HTML5, CSS3, SCSS, Javascript, JQuery, AJAX, Bootstrap, Photoshop, Zeplin etc.)</li>
-                                    <li>back-end (Laravel, PHP, MySQL, Custom PHP frameworks, Core PHP)</li>
+                                    <li>Experience in handling stressful situations</li>
+                                    <li>Experience with business management</li>
+                                    <li>Experience with Clients</li>
                                 </ul>
                                 <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
                             </div>
@@ -265,36 +263,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="contact">
-        <div class="container px-0 py-80">
-            <h2 class="text-center" data-aos="fade-down">Contact, <span class="f-blue bold-text">message me</span></h2>
-            <div class="row" data-aos="fade-up">
-                <div class="col-12">
-                    {{ Form::open() }}
-                    <div class="form-group">
-                        {{ Form::label('name', 'Name') }}
-                        {{ Form::text('name', null) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('email', 'Email') }}
-                        {{ Form::email('email', null) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('subject', 'Subject') }}
-                        {{ Form::text('subject', null) }}
-                    </div>
-                    <div class="form-group mb-40">
-                        {{ Form::label('message', 'Message') }}
-                        {{ Form::textarea('message', null) }}
-                    </div>
-                    <div class="form-group text-center mb-0">
-                        {{ Form::submit('Send message', ['class' => 'button button-blue']) }}
-                    </div>
-                    {{ Form::close() }}
                 </div>
             </div>
         </div>

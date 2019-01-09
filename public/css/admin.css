@@ -152,49 +152,49 @@ table {
 }
 
 @font-face {
-  font-family: 'Roboto-Medium';
-  src: url("/fonts/Roboto-Medium.eot");
-  src: url("/fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Medium.woff2") format("woff2"), url("/fonts/Roboto-Medium.woff") format("woff"), url("/fonts/Roboto-Medium.ttf") format("truetype"), url("/fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-family: 'roboto_condensedbold';
+  font-display: auto;
+  src: url("/fonts/robotocondensed-bold-webfont.woff2") format("woff2"), url("/fonts/robotocondensed-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Light';
-  src: url("/fonts/Roboto-Light.eot");
-  src: url("/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Light.woff2") format("woff2"), url("/fonts/Roboto-Light.woff") format("woff"), url("/fonts/Roboto-Light.ttf") format("truetype"), url("/fonts/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-family: 'robotobold';
+  font-display: auto;
+  src: url("/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/fonts/roboto-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Bold';
-  src: url("/fonts/Roboto-Bold.eot");
-  src: url("/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto-Bold.woff") format("woff"), url("/fonts/Roboto-Bold.ttf") format("truetype"), url("/fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-family: 'robotoitalic';
+  font-display: auto;
+  src: url("/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/fonts/roboto-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Italic';
-  src: url("/fonts/Roboto-Italic.eot");
-  src: url("/fonts/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Italic.woff2") format("woff2"), url("/fonts/Roboto-Italic.woff") format("woff"), url("/fonts/Roboto-Italic.ttf") format("truetype"), url("/fonts/Roboto-Italic.svg#Roboto-Italic") format("svg");
+  font-family: 'robotolight';
+  font-display: auto;
+  src: url("/fonts/roboto-light-webfont.woff2") format("woff2"), url("/fonts/roboto-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Regular';
-  src: url("/fonts/Roboto-Regular.eot");
-  src: url("/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff"), url("/fonts/Roboto-Regular.ttf") format("truetype"), url("/fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-family: 'robotomedium';
+  font-display: auto;
+  src: url("/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/fonts/roboto-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'RobotoCondensed-Bold';
-  src: url("/fonts/RobotoCondensed-Bold.eot");
-  src: url("/fonts/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("/fonts/RobotoCondensed-Bold.woff") format("woff"), url("/fonts/RobotoCondensed-Bold.ttf") format("truetype"), url("/fonts/RobotoCondensed-Bold.svg#RobotoCondensed-Bold") format("svg");
+  font-family: 'robotoregular';
+  font-display: auto;
+  src: url("/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/fonts/roboto-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -273,7 +273,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Roboto-Regular", Arial, Tahoma;
+  font-family: "robotoregular", Arial, Tahoma;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6851,7 +6851,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto-Regular", Arial, Tahoma;
+  font-family: "robotoregular", Arial, Tahoma;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6976,7 +6976,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto-Regular", Arial, Tahoma;
+  font-family: "robotoregular", Arial, Tahoma;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11580,7 +11580,7 @@ header {
   height: 70px;
   background: #2c2c2c;
   color: white;
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
   -webkit-box-shadow: 0 0 9.8px 0.2px rgba(0, 0, 0, 0.35);
           box-shadow: 0 0 9.8px 0.2px rgba(0, 0, 0, 0.35);
 }
@@ -11637,7 +11637,7 @@ header img {
 
 #sidemenu ul li a {
   display: block;
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
   line-height: 40px;
   color: white;
   padding-left: 20px;
@@ -11650,7 +11650,7 @@ body {
   color: #2c2c2c;
   font-size: 1rem;
   line-height: 1.625rem;
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
 }
 
 h1 {
@@ -11672,7 +11672,7 @@ a:hover {
   line-height: 30px;
   border: 0;
   border-bottom: 1px solid #2c2c2c;
-  font-family: "Roboto-Regular", Arial, Tahoma;
+  font-family: "robotoregular", Arial, Tahoma;
   -webkit-transition: border-bottom-color .3s ease-in-out;
   transition: border-bottom-color .3s ease-in-out;
   border-radius: 0;
@@ -11701,7 +11701,7 @@ a:hover {
   display: block;
   top: 0;
   left: 0;
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
   border: 1px solid #2c2c2c;
   border-bottom: 0;
   height: 30px;
@@ -11715,7 +11715,7 @@ a:hover {
 
 .form-group input[type="submit"] {
   display: inline-block;
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
   font-size: 1.125rem;
   width: auto;
   border-bottom: 0;
@@ -11834,7 +11834,7 @@ a:hover {
   display: block;
   line-height: 60px;
   font-size: 1.25rem;
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
   text-transform: uppercase;
   color: white;
 }

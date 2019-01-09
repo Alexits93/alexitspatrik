@@ -144,49 +144,49 @@ table {
 }
 
 @font-face {
-  font-family: 'Roboto-Medium';
-  src: url("/fonts/Roboto-Medium.eot");
-  src: url("/fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Medium.woff2") format("woff2"), url("/fonts/Roboto-Medium.woff") format("woff"), url("/fonts/Roboto-Medium.ttf") format("truetype"), url("/fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-family: 'roboto_condensedbold';
+  font-display: auto;
+  src: url("/fonts/robotocondensed-bold-webfont.woff2") format("woff2"), url("/fonts/robotocondensed-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Light';
-  src: url("/fonts/Roboto-Light.eot");
-  src: url("/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Light.woff2") format("woff2"), url("/fonts/Roboto-Light.woff") format("woff"), url("/fonts/Roboto-Light.ttf") format("truetype"), url("/fonts/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-family: 'robotobold';
+  font-display: auto;
+  src: url("/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/fonts/roboto-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Bold';
-  src: url("/fonts/Roboto-Bold.eot");
-  src: url("/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto-Bold.woff") format("woff"), url("/fonts/Roboto-Bold.ttf") format("truetype"), url("/fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-family: 'robotoitalic';
+  font-display: auto;
+  src: url("/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/fonts/roboto-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Italic';
-  src: url("/fonts/Roboto-Italic.eot");
-  src: url("/fonts/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Italic.woff2") format("woff2"), url("/fonts/Roboto-Italic.woff") format("woff"), url("/fonts/Roboto-Italic.ttf") format("truetype"), url("/fonts/Roboto-Italic.svg#Roboto-Italic") format("svg");
+  font-family: 'robotolight';
+  font-display: auto;
+  src: url("/fonts/roboto-light-webfont.woff2") format("woff2"), url("/fonts/roboto-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Regular';
-  src: url("/fonts/Roboto-Regular.eot");
-  src: url("/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff"), url("/fonts/Roboto-Regular.ttf") format("truetype"), url("/fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-family: 'robotomedium';
+  font-display: auto;
+  src: url("/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/fonts/roboto-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'RobotoCondensed-Bold';
-  src: url("/fonts/RobotoCondensed-Bold.eot");
-  src: url("/fonts/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("/fonts/RobotoCondensed-Bold.woff") format("woff"), url("/fonts/RobotoCondensed-Bold.ttf") format("truetype"), url("/fonts/RobotoCondensed-Bold.svg#RobotoCondensed-Bold") format("svg");
+  font-family: 'robotoregular';
+  font-display: auto;
+  src: url("/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/fonts/roboto-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -265,7 +265,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Roboto-Regular", Arial, Tahoma;
+  font-family: "robotoregular", Arial, Tahoma;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6843,7 +6843,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto-Regular", Arial, Tahoma;
+  font-family: "robotoregular", Arial, Tahoma;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6968,7 +6968,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto-Regular", Arial, Tahoma;
+  font-family: "robotoregular", Arial, Tahoma;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11619,13 +11619,13 @@ body {
 }
 
 h1 {
-  font-family: "Roboto-Bold", Arial, Tahoma;
+  font-family: "robotobold", Arial, Tahoma;
   margin-bottom: 0;
   color: white;
 }
 
 h1 span {
-  font-family: "Roboto-Light", Arial, Tahoma;
+  font-family: "robotolight", Arial, Tahoma;
 }
 
 @media (min-width: 768px) {
@@ -11635,7 +11635,7 @@ h1 span {
 }
 
 h2 {
-  font-family: "Roboto-Light", Arial, Tahoma;
+  font-family: "robotolight", Arial, Tahoma;
   line-height: 2.25rem;
   margin-bottom: 40px;
 }
@@ -11648,7 +11648,7 @@ h2 {
 }
 
 h3 {
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
   font-size: 1.5rem;
   line-height: 1.625rem;
   margin-bottom: 0;
@@ -11690,6 +11690,7 @@ a:hover {
   padding-top: 150px;
   z-index: 100;
   background: url("/images/cover_bg.jpg") left top no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -11903,6 +11904,7 @@ a:hover {
 @media (min-width: 768px) {
   #experience .timeline .card-holder {
     padding-top: 0;
+    width: calc(50% - 20px);
   }
 
   #experience .timeline .card-holder:after {
@@ -11929,58 +11931,40 @@ a:hover {
   #experience .timeline .card-holder:nth-of-type(2) {
     margin-top: 80px;
   }
-
-  #experience .timeline .card-holder:nth-of-type(odd),
-  #experience .timeline .card-holder:nth-of-type(even) {
-    width: calc(50% - 20px);
-  }
 }
 
 @media (min-width: 768px) and (min-width: 980px) {
-  #experience .timeline .card-holder:nth-of-type(odd),
-  #experience .timeline .card-holder:nth-of-type(even) {
+  #experience .timeline .card-holder {
     width: calc(50% - 90px);
   }
 }
 
 @media (min-width: 768px) {
-  #experience .timeline .card-holder:nth-of-type(odd) .card-number,
-  #experience .timeline .card-holder:nth-of-type(even) .card-number {
-    left: auto;
-    margin-left: 0;
-    right: -30px;
-  }
-}
-
-@media (min-width: 768px) and (min-width: 980px) {
-  #experience .timeline .card-holder:nth-of-type(odd) .card-number,
-  #experience .timeline .card-holder:nth-of-type(even) .card-number {
-    right: -100px;
-  }
-}
-
-@media (min-width: 768px) {
-  #experience .timeline .card-holder:nth-of-type(even):after {
+  #experience .timeline .card-holder:nth-of-type(2):after,
+  #experience .timeline .card-holder:nth-of-type(3):after {
     right: auto;
     left: -20px;
   }
 }
 
 @media (min-width: 768px) and (min-width: 980px) {
-  #experience .timeline .card-holder:nth-of-type(even):after {
+  #experience .timeline .card-holder:nth-of-type(2):after,
+  #experience .timeline .card-holder:nth-of-type(3):after {
     left: -80px;
   }
 }
 
 @media (min-width: 768px) {
-  #experience .timeline .card-holder:nth-of-type(even) .card-number {
+  #experience .timeline .card-holder:nth-of-type(2) .card-number,
+  #experience .timeline .card-holder:nth-of-type(3) .card-number {
     left: -30px;
     margin-left: 0;
   }
 }
 
 @media (min-width: 768px) and (min-width: 980px) {
-  #experience .timeline .card-holder:nth-of-type(even) .card-number {
+  #experience .timeline .card-holder:nth-of-type(2) .card-number,
+  #experience .timeline .card-holder:nth-of-type(3) .card-number {
     left: -100px;
   }
 }
@@ -11999,7 +11983,7 @@ a:hover {
   text-align: center;
   line-height: 20px;
   font-size: 0.875rem;
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 9.8px 0.2px rgba(0, 0, 0, 0.35);
           box-shadow: 0 0 9.8px 0.2px rgba(0, 0, 0, 0.35);
@@ -12009,7 +11993,15 @@ a:hover {
 
 @media (min-width: 768px) {
   #experience .timeline .card-holder .card-number {
+    left: auto;
     top: 30px;
+    right: -30px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 980px) {
+  #experience .timeline .card-holder .card-number {
+    right: -100px;
   }
 }
 
@@ -12157,7 +12149,7 @@ a:hover {
     display: block;
     font-size: 0.875rem;
     line-height: 0.875rem;
-    font-family: "Roboto-Regular", Arial, Tahoma;
+    font-family: "robotoregular", Arial, Tahoma;
     color: white;
   }
 
@@ -12165,7 +12157,7 @@ a:hover {
     display: block;
     font-size: 0.875rem;
     line-height: 0.875rem;
-    font-family: "Roboto-Bold", Arial, Tahoma;
+    font-family: "robotobold", Arial, Tahoma;
   }
 }
 
@@ -12192,7 +12184,7 @@ a:hover {
 
 .form-group label {
   text-transform: uppercase;
-  font-family: "Roboto-Medium", Arial, Tahoma;
+  font-family: "robotomedium", Arial, Tahoma;
   font-size: 0.875rem;
   line-height: 1.625rem;
   padding-left: 20px;
@@ -12385,13 +12377,13 @@ a:hover {
 .data-card .card-content ul li span {
   text-transform: uppercase;
   font-size: 0.875rem;
-  font-family: "Roboto-Medium", Arial, Tahoma;
+  font-family: "robotomedium", Arial, Tahoma;
 }
 
 .data-card .card-content .card-date {
   display: block;
   font-size: 0.875rem;
-  font-family: "Roboto-Medium", Arial, Tahoma;
+  font-family: "robotomedium", Arial, Tahoma;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: #4a74e4;
@@ -12410,7 +12402,7 @@ a:hover {
 }
 
 .logo-text {
-  font-family: "RobotoCondensed-Bold", Arial, Tahoma;
+  font-family: "roboto_condensedbold", Arial, Tahoma;
   font-size: 1.125rem;
 }
 
@@ -12425,7 +12417,7 @@ a:hover {
   height: 40px;
   padding: 0 20px;
   line-height: 40px;
-  font-family: "Roboto-Bold", Arial, Tahoma;
+  font-family: "robotobold", Arial, Tahoma;
   font-size: 0.875rem;
   border-radius: 20px;
   -webkit-transition: all .3s ease-in-out;
@@ -12573,15 +12565,15 @@ a:hover {
 }
 
 .light-text {
-  font-family: "Roboto-Light", Arial, Tahoma;
+  font-family: "robotolight", Arial, Tahoma;
 }
 
 .bold-text {
-  font-family: "Roboto-Bold", Arial, Tahoma;
+  font-family: "robotobold", Arial, Tahoma;
 }
 
 .italic-text {
-  font-family: "Roboto-Italic", Arial, Tahoma;
+  font-family: "robotoitalic", Arial, Tahoma;
 }
 
 footer {
