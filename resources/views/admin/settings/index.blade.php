@@ -34,8 +34,8 @@
                             {{ Form::text('email', $setting->email) }}
                         </div>
                         <div class="form-group col-12 col-md-6">
-                            {{ Form::label('nationality', 'Nationality') }}
-                            {{ Form::text('nationality', $setting->nationality) }}
+                            {{ Form::label('location', 'Location') }}
+                            {{ Form::text('location', $setting->location) }}
                         </div>
                         <div class="form-group text-center col-12   ">
                             {{ Form::submit('Submit', ['class' => 'd-inline-block button button-blue']) }}

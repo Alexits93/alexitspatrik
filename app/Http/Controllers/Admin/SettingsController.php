@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Cache;
 
 class SettingsController extends Controller
 {
@@ -75,6 +76,7 @@ class SettingsController extends Controller
         $setting->fill($request->except('_token'));
         $setting->save();
 
+        Cache::forget('personal_data');
         return redirect()->back()->with('successful', 'Settings were updated successfully.');
     }
 

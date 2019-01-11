@@ -51,7 +51,7 @@
                     <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" /><span>date of birth:</span> {{ date('d.m.Y', strtotime($settings->date_of_birth)) }},<br/>{{ $settings->place_of_birth }}</li>
                     <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" /><span>phone number:</span> {{ $settings->phone }}</li>
                     <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" /><span>email address:</span> {{ $settings->email }}</li>
-                    <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" /><span>nationality:</span> {{ $settings->nationality }}</li>
+                    <li><img src="{{ URL::to('/images/card_content_bullet.png') }}" /><span>location:</span> {{ $settings->location }}</li>
                 </ul>
             </div>
         </div>

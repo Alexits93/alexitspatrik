@@ -23,7 +23,7 @@ class CreateSettingsTable extends Migration
             $table->string('place_of_birth')->nullable();
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
-            $table->string('nationality')->nullable();
+            $table->string('location')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

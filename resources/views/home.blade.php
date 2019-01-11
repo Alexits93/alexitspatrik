@@ -13,7 +13,7 @@
     <div id="about">
         <div class="container px-0 py-80">
             <h2 class="text-center" data-aos="fade-up">About <span class="f-blue bold-text">me</span></h2>
-            <a  href="#about" id="goDown" data-aos="zoom-in" data-aos-delay="6000   "></a>
+            <a  href="#about" id="goDown" data-aos="zoom-in" data-aos-delay="6000" aria-label="goDown"></a>
             <div class="row w-lg-790 mx-lg-auto">
                 <div class="col-12 col-md-6" data-aos="fade-right">
                     <div class="data-card">
@@ -24,7 +24,7 @@
                                 <li><span>date of birth:</span> {{ date('d.m.Y', strtotime($settings->date_of_birth)) }},<br/>{{ $settings->place_of_birth }}</li>
                                 <li><span>phone number:</span> {{ $settings->phone }}</li>
                                 <li><span>email address:</span> {{ $settings->email }}</li>
-                                <li><span>nationality:</span> {{ $settings->nationality }}</li>
+                                <li><span>location:</span> {{ $settings->location }}</li>
                             </ul>
                         </div>
                     </div>
@@ -211,12 +211,12 @@
                     <div class="col-12 col-md-6 col-lg-4 mb-20 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="data-card">
                             <div class="img-holder" style="background-color: {{ $p->color_code }}">
-                                <a href="{{ $p->target_url }}" target="_blank">
+                                <a href="{{ $p->target_url }}" rel="noopener noreferrer" target="_blank">
                                     <img src="{{ URL::to($p->pic_path) }}" alt="{{ $p->title }}" title="{{ $p->title }}" width="{{ $p->img_width }}"/>
                                 </a>
                             </div>
                             <div class="card-content py-40 px-20 text-center {{ strtolower($p->title) }}">
-                                <h3><a href="{{ $p->target_url }}" class="custom" target="_blank">{{ $p->title }}</a></h3>
+                                <h3><a href="{{ $p->target_url }}" class="custom" rel="noopener noreferrer" target="_blank">{{ $p->title }}</a></h3>
                                 <p>{{ $p->subtitle }} @if($p->collaboration)<span class="bold-text">{{ $p->collaboration }}</span>@endif</p>
                                 <span class="italic-text">{{ $p->description }}</span>
                             </div>
