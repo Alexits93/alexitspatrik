@@ -20,11 +20,11 @@
                         <div class="top d-flex align-items-center px-20"><h3>Personal data</h3></div>
                         <div class="card-content py-40 px-20">
                             <ul>
-                                <li><span>name:</span> {{ $settings->fullname }}</li>
-                                <li><span>date of birth:</span> {{ date('d.m.Y', strtotime($settings->date_of_birth)) }},<br/>{{ $settings->place_of_birth }}</li>
-                                <li><span>phone number:</span> {{ $settings->phone }}</li>
-                                <li><span>email address:</span> {{ $settings->email }}</li>
-                                <li><span>location:</span> {{ $settings->location }}</li>
+                                <li><span>Name:</span> {{ $settings->fullname }}</li>
+                                <li><span>Date of birth:</span> {{ date('d.m.Y', strtotime($settings->date_of_birth)) }},<br/>{{ $settings->place_of_birth }}</li>
+                                <li><span>Phone number:</span> {{ $settings->phone }}</li>
+                                <li><span>Email address:</span> {{ $settings->email }}</li>
+                                <li><span>Location:</span> {{ $settings->location }}</li>
                             </ul>
                         </div>
                     </div>
@@ -34,8 +34,8 @@
                         <div class="top d-flex align-items-center px-20"><h3>Language</h3></div>
                         <div class="card-content py-40 px-20">
                             <ul>
-                                <li><span>English:</span> Professional working proficiency (with State Accredited Language Examination)</li>
-                                <li><span>German:</span> Limited working proficiency</li>
+                                <li><span>English:</span> Professional working proficiency</li>
+                                <li><span>German:</span> Basic working proficiency</li>
                             </ul>
                         </div>
                     </div>
@@ -90,13 +90,13 @@
                                 <span class="card-date">2017.06-2018.12</span>
                                 <p class="bold-text">Full-Stack Web Developer at Voov Kft.</p>
                                 <ul>
-                                    <li>maintaining or support the development of web applications/websites.</li>
+                                    <li>Maintaining or supporting the development of web applications/websites.</li>
                                     <li>50+ projects (with management software - Active Collab)</li>
-                                    <li>working together with the designer team</li>
-                                    <li>front-end, sitebuild (HTML5, CSS3, SCSS, Javascript, JQuery, AJAX, Bootstrap, Photoshop, Zeplin etc.)</li>
-                                    <li>back-end (Laravel, PHP, MySQL, Custom PHP frameworks, Core PHP)</li>
+                                    <li>Working together with the designer team</li>
+                                    <li>Front-end, sitebuild (HTML5, CSS3, SCSS, JavaScript, JQuery, AJAX, Bootstrap, Photoshop, Zeplin etc.)</li>
+                                    <li>Back-end (Laravel, PHP, MySQL, Custom PHP frameworks, Core PHP)</li>
                                 </ul>
-                                <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
+                                <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery etc.</span>
                             </div>
                         </div>
                     </div>
@@ -105,13 +105,13 @@
                         <div class="data-card">
                             <div class="card-content">
                                 <span class="card-date">2017.01-2017.04</span>
-                                <p class="bold-text">web developer at Master Partner Kft.</p>
+                                <p class="bold-text">Web developer at Master Partner Kft.</p>
                                 <ul>
-                                    <li>customizing LG Signage framework</li>
-                                    <li>working with custom PHP frameworks, sitebuilding</li>
+                                    <li>Customizing LG Signage framework</li>
+                                    <li>Working with custom PHP frameworks, sitebuilding</li>
                                     <li>Project Management with Asana</li>
                                 </ul>
-                                <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
+                                <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery etc.</span>
                             </div>
                         </div>
                     </div>
@@ -120,13 +120,13 @@
                         <div class="data-card">
                             <div class="card-content">
                                 <span class="card-date">2016.06-2017.01</span>
-                                <p class="bold-text">trainee at Hungarian Post</p>
+                                <p class="bold-text">Trainee at Hungarian Post</p>
                                 <ul>
-                                    <li>trainee at West Hungarian Regional Directorate General</li>
-                                    <li>optimization and analyzation of delivery routes, systems</li>
-                                    <li>creating financial statements with MS Excel</li>
-                                    <li>creating presentations with MS PowerPoint</li>
-                                    <li>analyzing routes with Arc Map</li>
+                                    <li>Trainee at West Hungarian Regional Directorate General</li>
+                                    <li>Optimization and analyzation of delivery routes, systems</li>
+                                    <li>Creating financial statements with MS Excel</li>
+                                    <li>Creating presentations with MS PowerPoint</li>
+                                    <li>Analyzing routes with Arc Map</li>
                                 </ul>
                             </div>
                         </div>
@@ -136,13 +136,13 @@
                         <div class="data-card">
                             <div class="card-content">
                                 <span class="card-date">2015.05-2017.01</span>
-                                <p class="bold-text">self employed at IT-Sopron</p>
+                                <p class="bold-text">Self employed at IT-Sopron</p>
                                 <ul>
                                     <li>Experience in handling stressful situations</li>
                                     <li>Experience with business management</li>
                                     <li>Experience with Clients</li>
                                 </ul>
-                                <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery</span>
+                                <span class="italic-text">Used technologies: HTML5, CSS3, PHP, Bootstrap, Javascript, JQuery etc.</span>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                             <h3 class="text-center mb-20">Front-end</h3>
                             <ul>
                                 <li>Professional work proficiency with Bootstrap, CSS Flexbox</li>
-                                <li>Proficient with css3, scss, html5, js, jquery, ajax, Blade templating language</li>
+                                <li>Proficient with CSS3, SCSS, HTML5, JS, JQuery, AJAX, Blade templating language</li>
                                 <li>Experience in customizing bootstrap, css templates</li>
                                 <li>Participated in more than 20 sitebuild projects</li>
                                 <li>Capable to sitebuild from PSD</li>
@@ -256,10 +256,10 @@
                             <div class="circle-top coding"></div>
                             <h3 class="text-center mb-20">Coding</h3>
                             <ul class=" text-left mb-0">
-                                <li>reading news about IT/programming trends</li>
-                                <li>keeping myself up-to-date in used technologies</li>
-                                <li>active member on Stackoverflow</li>
-                                <li>active member in several facebook groups</li>
+                                <li>Reading news about IT/programming trends</li>
+                                <li>Keeping myself up-to-date in used technologies</li>
+                                <li>Active member on Stackoverflow</li>
+                                <li>Active member in several facebook groups</li>
                             </ul>
                         </div>
                     </div>

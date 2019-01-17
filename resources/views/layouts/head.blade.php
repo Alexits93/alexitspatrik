@@ -16,6 +16,6 @@
 
 {!! SEO::generate() !!}
 
-{{ Html::style(mix('/css/app.css')) }}
+{{ Html::style(mix('/css/app.css'), ['rel' => 'stylesheet', 'media' => 'all']) }}
 
 @stack('head')

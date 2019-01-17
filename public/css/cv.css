@@ -9,11 +9,6 @@ footer {
     color: #2c2c2c;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 h1{
     font-size: 34px;
     font-family: 'Roboto-Bold', sans-serif;
@@ -24,34 +19,35 @@ h1 span{
     font-weight: 300;
 }
 h2{
+    text-align: center;
     font-size: 28px;
     font-family: 'Roboto-Light', sans-serif;
     font-weight: 300;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 h2 span{
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
     color: #4a74e4;
 }
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin: 0 0 10px;
+    padding: 0;
+}
+
 #cover{
     position: relative;
-    padding: 70px 20px 100px;
+    padding: 70px 20px;
     background: url("/images/cover_bg.jpg") center center no-repeat;
 }
-#cover::after{
-    position: absolute;
-    z-index: 100;
-    display: block;
-    content: '';
-    right: -100px;
-    bottom: -250px;
-    width: 650px;
-    height: 650px;
-    background: rgba(255,255,255,.1);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+#cover h2{
+    text-align: left;
 }
 #cover ul{
     position: absolute;
@@ -87,79 +83,67 @@ h2 span{
     display: block;
     right: 20px;
     bottom: -54px;
-    width: 270px;
+    width: 220px;
+}
+
+#knowledge{
+    padding: 0 20px;
+}
+#knowledge .data-card{
+    width: 238px;
+    float: left;
+    margin-right: 20px;
+    height: 410px;
+}
+#knowledge .data-card:last-of-type{
+    margin-right: 0;
 }
 
 #about{
     position: relative;
     background: white;
-    padding: 40px 20px;
+    padding: 0 20px;
+    clear: left;
 }
 #about .data-card{
+    padding: 0;
     width: 330px;
 }
-#about .data-card .top{
-    border-bottom: 1px solid #d5d5d5;
-}
 #about .data-card .card-content{
-    padding: 20px 0;
-}
-#about .data-card .card-content ul li{
-    padding-left: 20px;
-}
-#about .data-card .card-content ul li img{
-    display: inline-block;
-    width: 11px;
-    margin-right: 5px;
-}
-#about .data-card .card-content ul li span{
-    font-weight: 700;
+    padding: 10px 0;
 }
 #about .data-card:last-of-type{
     position: absolute;
-    top: 40px;
+    top: 0;
     right: 20px;
 }
 
 #education{
     position: relative;
-    padding: 40px 20px;
-    background: #dbe3fa;
-    height: 320px;
+    padding: 0 20px;
 }
 #education .data-card{
-    width: 216px;
+    width: 238px;
     float: left;
     margin-right: 20px;
+}
+#education .card-holder .data-card .card-content p.bold-text{
+    margin: 0 0 10px 0;
 }
 #education .data-card:last-of-type{
     margin-right: 0;
 }
 
-.block{
-    position: relative;
-    background: lime;
-}
 #experience{
-    padding: 40px 20px;
-    position: absolute;
+    padding: 0 20px;
     clear: left;
-    width: 9.5cm;
-    left: 0;
-    top: 0;
 }
-#experience .data-card, #knowledge .data-card{
+#experience .data-card{
+    background: none;
     margin-bottom: 20px;
 }
-#experience .card-holder .data-card .card-content p.bold-text, #knowledge .data-card .card-content p.bold-text{
-    margin: 0 0 20px 0;
-}
-#knowledge{
-    padding: 40px 20px;
-    position: absolute;
-    width: 9.5cm;
-    right: 0;
-    top: 0;
+#experience .card-holder .data-card .card-content p.bold-text{
+    margin: 0 0 10px 0;
 }
 
 .bold-text{
@@ -173,29 +157,32 @@ h2 span{
 }
 .card-date{
     font-size: 14px;
+    line-height: 16px;
     color: #4a74e4;
 }
 .page-break {
     page-break-after: always;
 }
 
-.data-card{
+.data-card .top{
+    padding: 0 10px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.data-card .top h3{
+    margin-bottom: 10px;
+}
+.data-card .card-content{
     padding: 10px;
-    background: white;
-    box-shadow: 0 0 9px 1px rgba(44, 44, 44, 0.35);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
 }
 .data-card .card-content ul li{
-    padding-left: 20px;
+    padding-left: 25px;
     margin-bottom: 10px;
     line-height: 18px;
 }
 .data-card .card-content ul li img{
     display: inline-block;
     width: 11px;
-    margin-right: 5px;
+    margin: 3px 5px 0 -16px;
 }
 .data-card .card-content ul li span{
     font-weight: 700;
